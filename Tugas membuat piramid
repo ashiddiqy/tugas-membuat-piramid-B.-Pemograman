@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	int n;
+	cout << " masukkan panjang pola ";
+	cin >> n;
+	
+	cout << "pola\n";
+	
+	for ( int i = 1; i <= n; i++){
+		for ( int y = n; y > i; y--){
+			cout << " ";
+		}
+		for ( int z = 1; z <= (2*i - 1); z++){
+			cout << "#";
+		}
+		cout << endl;
+	}
+}
